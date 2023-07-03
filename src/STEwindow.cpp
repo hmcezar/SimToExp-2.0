@@ -18,6 +18,7 @@
 
 //Qt includes
 #include <QtGlobal>
+#include <QDebug>
 #if QT_VERSION >= 0x050000
     #include <QtWidgets/QMessageBox>
     #include <QtWidgets/QFileDialog>

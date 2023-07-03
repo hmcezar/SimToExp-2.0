@@ -1,25 +1,55 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'scrollzoomer.h'
 **
-** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.7)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.9)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../scrollzoomer.h"
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'scrollzoomer.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.7. It"
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.15.9. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_ScrollZoomer_t {
+    QByteArrayData data[7];
+    char stringdata0[55];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_ScrollZoomer_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_ScrollZoomer_t qt_meta_stringdata_ScrollZoomer = {
+    {
+QT_MOC_LITERAL(0, 0, 12), // "ScrollZoomer"
+QT_MOC_LITERAL(1, 13, 14), // "scrollBarMoved"
+QT_MOC_LITERAL(2, 28, 0), // ""
+QT_MOC_LITERAL(3, 29, 15), // "Qt::Orientation"
+QT_MOC_LITERAL(4, 45, 1), // "o"
+QT_MOC_LITERAL(5, 47, 3), // "min"
+QT_MOC_LITERAL(6, 51, 3) // "max"
+
+    },
+    "ScrollZoomer\0scrollBarMoved\0\0"
+    "Qt::Orientation\0o\0min\0max"
+};
+#undef QT_MOC_LITERAL
+
 static const uint qt_meta_data_ScrollZoomer[] = {
 
  // content:
-       6,       // revision
+       8,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -29,22 +59,20 @@ static const uint qt_meta_data_ScrollZoomer[] = {
        0,       // flags
        0,       // signalCount
 
- // slots: signature, parameters, type, tag, flags
-      24,   14,   13,   13, 0x08,
+ // slots: name, argc, parameters, tag, flags
+       1,    3,   19,    2, 0x08 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void, 0x80000000 | 3, QMetaType::Double, QMetaType::Double,    4,    5,    6,
 
        0        // eod
-};
-
-static const char qt_meta_stringdata_ScrollZoomer[] = {
-    "ScrollZoomer\0\0o,min,max\0"
-    "scrollBarMoved(Qt::Orientation,double,double)\0"
 };
 
 void ScrollZoomer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
-        ScrollZoomer *_t = static_cast<ScrollZoomer *>(_o);
+        auto *_t = static_cast<ScrollZoomer *>(_o);
+        (void)_t;
         switch (_id) {
         case 0: _t->scrollBarMoved((*reinterpret_cast< Qt::Orientation(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3]))); break;
         default: ;
@@ -52,29 +80,26 @@ void ScrollZoomer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
     }
 }
 
-const QMetaObjectExtraData ScrollZoomer::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
+QT_INIT_METAOBJECT const QMetaObject ScrollZoomer::staticMetaObject = { {
+    QMetaObject::SuperData::link<QwtPlotZoomer::staticMetaObject>(),
+    qt_meta_stringdata_ScrollZoomer.data,
+    qt_meta_data_ScrollZoomer,
+    qt_static_metacall,
+    nullptr,
+    nullptr
+} };
 
-const QMetaObject ScrollZoomer::staticMetaObject = {
-    { &QwtPlotZoomer::staticMetaObject, qt_meta_stringdata_ScrollZoomer,
-      qt_meta_data_ScrollZoomer, &staticMetaObjectExtraData }
-};
-
-#ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &ScrollZoomer::getStaticMetaObject() { return staticMetaObject; }
-#endif //Q_NO_DATA_RELOCATION
 
 const QMetaObject *ScrollZoomer::metaObject() const
 {
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
 void *ScrollZoomer::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_ScrollZoomer))
-        return static_cast<void*>(const_cast< ScrollZoomer*>(this));
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_ScrollZoomer.stringdata0))
+        return static_cast<void*>(this);
     return QwtPlotZoomer::qt_metacast(_clname);
 }
 
@@ -87,7 +112,12 @@ int ScrollZoomer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 1;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 1)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 1;
     }
     return _id;
 }
+QT_WARNING_POP
 QT_END_MOC_NAMESPACE

@@ -397,7 +397,7 @@ public:
         num_densities_plot->setAxisAutoScale(QwtPlot::yLeft, false); //turn off autoscaling
         //scrollzoomer settings
         num_densities_scroll = new ScrollZoomer(num_densities_plot->canvas());
-        num_densities_scroll->setAxis(QwtPlot::xBottom, QwtPlot::yLeft);
+        num_densities_scroll->setAxes(QwtPlot::xBottom, QwtPlot::yLeft);
         num_densities_scroll->setHScrollBarPosition(ScrollZoomer::AttachedToScale);
         num_densities_scroll->setVScrollBarPosition(ScrollZoomer::AttachedToScale);
         num_densities_grid->addWidget(num_densities_plot, 0, 0, 1, 1);
@@ -414,7 +414,7 @@ public:
         e_densities_plot->setCanvasBackground(QBrush(QColor(Qt::white)));
         //scrollzoomer settings
         e_densities_scroll = new ScrollZoomer(e_densities_plot->canvas());
-        e_densities_scroll->setAxis(QwtPlot::xBottom, QwtPlot::yLeft);
+        e_densities_scroll->setAxes(QwtPlot::xBottom, QwtPlot::yLeft);
         e_densities_scroll->setHScrollBarPosition(ScrollZoomer::AttachedToScale);
         e_densities_scroll->setVScrollBarPosition(ScrollZoomer::AttachedToScale);
         e_densities_grid->addWidget(e_densities_plot, 0, 0, 1, 1);
@@ -431,7 +431,7 @@ public:
         neutron_SL_plot->setCanvasBackground(QBrush(QColor(Qt::white)));
         //scrollzoomer settings
         neutron_SL_scroll = new ScrollZoomer(neutron_SL_plot->canvas());
-        neutron_SL_scroll->setAxis(QwtPlot::xBottom, QwtPlot::yLeft);
+        neutron_SL_scroll->setAxes(QwtPlot::xBottom, QwtPlot::yLeft);
         neutron_SL_scroll->setHScrollBarPosition(ScrollZoomer::AttachedToScale);
         neutron_SL_scroll->setVScrollBarPosition(ScrollZoomer::AttachedToScale);
         neutron_SL_grid->addWidget(neutron_SL_plot, 0, 0, 1, 1);
@@ -447,7 +447,7 @@ public:
         xray_formfactors_plot->setFrameShape(QFrame::NoFrame);
         xray_formfactors_plot->setCanvasBackground(QBrush(QColor(Qt::white)));
         xray_formfactors_scroll = new ScrollZoomer(xray_formfactors_plot->canvas());
-        xray_formfactors_scroll->setAxis(QwtPlot::xBottom, QwtPlot::yLeft);
+        xray_formfactors_scroll->setAxes(QwtPlot::xBottom, QwtPlot::yLeft);
         xray_formfactors_scroll->setHScrollBarPosition(ScrollZoomer::AttachedToScale);
         xray_formfactors_scroll->setVScrollBarPosition(ScrollZoomer::AttachedToScale);
         xray_formfactors_grid->addWidget(xray_formfactors_plot, 0, 0, 1, 1);
@@ -464,7 +464,7 @@ public:
         neutron_formfactors_plot->setFrameShape(QFrame::NoFrame);
         neutron_formfactors_plot->setCanvasBackground(QBrush(QColor(Qt::white)));
         neutron_formfactors_scroll = new ScrollZoomer(neutron_formfactors_plot->canvas());
-        neutron_formfactors_scroll->setAxis(QwtPlot::xBottom, QwtPlot::yLeft);
+        neutron_formfactors_scroll->setAxes(QwtPlot::xBottom, QwtPlot::yLeft);
         neutron_formfactors_scroll->setHScrollBarPosition(ScrollZoomer::AttachedToScale);
         neutron_formfactors_scroll->setVScrollBarPosition(ScrollZoomer::AttachedToScale);
         neutron_formfactors_grid->addWidget(neutron_formfactors_plot, 0, 0, 1, 1);
@@ -480,7 +480,7 @@ public:
         vol_probs_plot->setFrameShape(QFrame::NoFrame);
         vol_probs_plot->setCanvasBackground(QBrush(QColor(Qt::white)));
         vol_probs_scroll = new ScrollZoomer(vol_probs_plot->canvas());
-        vol_probs_scroll->setAxis(QwtPlot::xBottom, QwtPlot::yLeft);
+        vol_probs_scroll->setAxes(QwtPlot::xBottom, QwtPlot::yLeft);
         vol_probs_scroll->setHScrollBarPosition(ScrollZoomer::AttachedToScale);
         vol_probs_scroll->setVScrollBarPosition(ScrollZoomer::AttachedToScale);
         vol_probs_grid->addWidget(vol_probs_plot, 0, 0, 1, 1);

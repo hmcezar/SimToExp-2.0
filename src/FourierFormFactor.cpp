@@ -89,10 +89,9 @@ void FourierFormFactor::createAtomicFormFactors(const AtomTypes& types) {
 	if(ff_type == XRAY) {
 
 		int size = types.size();
-		for(int i = 0; i < size; ++i) {
-
+		for(int i = 0; i < size-1; ++i) {
 			XrayAtomicFormFactor xaff(types[i], *info);
-			xray_atomic_FFs.insert(types[i],xaff);
+			xray_atomic_FFs.insert(types[i], xaff);
 		}
 	}
 }
